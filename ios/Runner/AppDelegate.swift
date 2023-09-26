@@ -12,7 +12,7 @@ import Flutter
         let channel = FlutterMethodChannel.init(name: "flavor", binaryMessenger: controller.binaryMessenger)
         channel.setMethodCallHandler { (call, result) in
             let flavor = Bundle.main.infoDictionary?["Flavor"]
-            result(flavor!)
+            result(flavor)
         }
     GeneratedPluginRegistrant.register(with: self)
     return super.application(application, didFinishLaunchingWithOptions: launchOptions)

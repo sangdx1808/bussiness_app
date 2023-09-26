@@ -1,3 +1,5 @@
+import 'package:bussiness_app/firebase_options.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
@@ -18,6 +20,9 @@ class AppConfig {
   }
 
   static Future<void> appConfig() async {
+    await Firebase.initializeApp(
+      options: DefaultFirebaseOptions.currentPlatform,
+    );
     WidgetsFlutterBinding.ensureInitialized();
     configLoading();
     final flavor = await FlavorApp.getFlavor();

@@ -3,7 +3,7 @@ import 'package:flutter/foundation.dart';
 
 class FirebaseConfig {
   static final firebaseConfig = FCMConfig.instance;
-
+  
   static Future fcmConfig() async {
     await firebaseConfig.init(
       onBackgroundMessage: _firebaseMessagingBackgroundHandler,

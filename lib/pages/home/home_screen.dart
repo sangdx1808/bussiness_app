@@ -8,8 +8,19 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
-        color: AppColors.primary,
+      appBar: AppBar(
+        title: Text(
+          "asds",
+        ),
+      ),
+      body: Center(
+        child: GestureDetector(
+          child: Container(
+            height: 100,
+            width: 100,
+            color: AppColors.primary,
+          ),
+        ),
       ),
     );
   }

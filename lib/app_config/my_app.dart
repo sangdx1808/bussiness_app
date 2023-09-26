@@ -46,10 +46,10 @@ class _MyAppState extends State<MyApp> with WidgetsBindingObserver {
   Widget build(BuildContext context) {
     return ScreenUtilInit(
       useInheritedMediaQuery: true,
-      // designSize: const Size(
-      //   ScreenUtilConfig.screenWidth,
-      //   ScreenUtilConfig.screenHeight,
-      // ),
+      designSize: const Size(
+        ScreenUtilConfig.screenWidth,
+        ScreenUtilConfig.screenHeight,
+      ),
       minTextAdapt: true,
       builder: (BuildContext context, Widget? child) {
         return GetMaterialApp(

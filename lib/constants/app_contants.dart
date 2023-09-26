@@ -1,5 +1,10 @@
 class AppConstants {}
 
+class ScreenUtilConfig {
+  static const double screenWidth = 375;
+  static const double screenHeight = 812;
+}
+
 class NetworkStatus {
   static const int notAuthorized = 401;
   static const int notFound = 404;
