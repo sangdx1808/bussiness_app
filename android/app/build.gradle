@@ -50,6 +50,15 @@ android {
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
     }
+    
+    signingConfigs {
+        releaseDev{
+            storeFile file('keystore_dev')
+            storePassword '123456'
+            keyAlias = 'key'
+            keyPassword '123456'
+        }
+    }
 
     buildTypes {
         release {
@@ -57,6 +66,20 @@ android {
             // Signing with the debug keys for now, so `flutter run --release` works.
             signingConfig signingConfigs.debug
         }
+    }
+    flavorDimensions "app"
+
+    productFlavors {
+        dev {
+            dimension "app"
+            resValue "string", "app_name", "Bussiness Dev"
+            applicationId "com.example.bussiness_app"
+        }
+        production {
+            dimension "app"
+            resValue "string", "app_name", "Bussiness"
+        }
+
     }
 }
 

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "511301026544",
+    "project_id": "bussiness-mobile-app",
+    "storage_bucket": "bussiness-mobile-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:511301026544:android:1e8e154638169dcf89b835",
+        "android_client_info": {
+          "package_name": "com.example.bussiness_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBffcbx6U8caRB2-VgWdAUzGxpkcJkU-UQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
