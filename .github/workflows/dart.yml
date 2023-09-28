@@ -48,5 +48,5 @@ jobs:
         with:
           appId: ${{secrets.FIREBASE_APP_ID}}
           serviceCredentialsFileContent: ${{secrets.CREDENTIAL_FILE_CONTENT}}
-          groups: bussinessff-tester
+          groups: bussiness-tester
           file: build/app/outputs/flutter-apk/app-production-release.apk
