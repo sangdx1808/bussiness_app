@@ -1,4 +1,3 @@
-import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import '../index.dart';
@@ -10,12 +9,10 @@ class AppPages {
       page: () => const HomeScreen(),
     ),
     GetPage(
-      name: AppRouter.test,
-      page: () => Container(
-        height: 100,
-        width: 100,
-        color: AppColors.black,
-      ),
+      binding: IntroduceBinding(),
+      name: AppRouter.introduce,
+      transition: Transition.rightToLeft,
+      page: () => const IntroduceScreen(),
     )
   ];
 }

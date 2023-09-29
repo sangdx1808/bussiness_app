@@ -10,3 +10,4 @@ export 'base/index.dart';
 export 'theme/index.dart';
 export 'pages/index.dart';
 export 'app_config/index.dart';
+export 'custom_view/index.dart';

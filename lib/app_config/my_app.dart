@@ -73,7 +73,7 @@ class _MyAppState extends State<MyApp> with WidgetsBindingObserver {
           // translationsKeys: AppTranslation.translations,
           logWriterCallback: Logger1.write,
           fallbackLocale: const Locale(Constants.vietnamese),
-          initialRoute: AppRouter.home,
+          initialRoute: AppRouter.introduce,
           getPages: AppPages.routes,
           builder: EasyLoading.init(),
         );

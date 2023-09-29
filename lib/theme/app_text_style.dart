@@ -223,4 +223,9 @@ class AppTextStyles {
         fontWeight: FontWeight.w600,
         fontFamily: fontFamily,
       );
+  static TextStyle get s34w600 => TextStyle(
+        fontSize: 34.sp,
+        fontWeight: FontWeight.w600,
+        fontFamily: fontFamily,
+      );
 }

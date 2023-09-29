@@ -3,7 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../index.dart';
 
-const fontFamily = 'montserrat';
+const fontFamily = 'Sora';
 ThemeData defaultTheme = ThemeData();
 
 final ThemeData baseTheme = ThemeData(
